@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>git-dokumantation-01</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Arbeiten mit Git</h1>
+<h2>Vorbereitung</h2>
+<p>Meine Github-Projekte sind erreichbar über <a href="https://github.com/bpgs" title="Meine Github-Startseite">https://github.com/bpgs</a>. Sieht so aus:</p>
+<p><img src="github.com-bpgs-startseite.jpg" alt="Mein Github Startseite" /></p>
+<p>Nach Click auf <strong>Repositories</strong> sieht man</p>
+<p><img src="github.com-bpgstab-repositories.jpg" alt="Repositories Übersicht" /></p>
+<p>Die <strong>Public Profile</strong> Seite, die man nach Klick auf <strong>Edit profile</strong> sieht, sieht so aus</p>
+<p><img src="github.com-settings-profile.jpg" alt="Überblick profile" /></p>
+<p>Hier findet man auch die Unterseite SSH-Keys. Sie hat sich gegenüber dem Screenshot vom 19.09.2014 (siehe unten) stark verändert:</p>
+<p><img src="github.com-settings-ssh-audit.jpg" alt="Unterseite SSH Keys" /></p>
+<p>Sobald man einen Key mit Approve bestätigt, verschwindet er in dieser Übersicht. Diese Bestätigung kann man unter Security -&gt; Security history nachvollziehen.</p>
+<h2>Test Repository</h2>
+<p>Im Github-Account wurde die Test Repository <strong>test-for-pc</strong> erstellt</p>
+<h2>Auf 1Blue</h2>
+<p>Hier kann man nicht mit Git arbeiten. Ist nicht installiert.</p>
+<h2>Auf One.com</h2>
+<p>Git ist installiert</p>
+<p>ssh-keygen ist nicht installiert. Es lässt sich also kein SSH Key erzeugen.</p>
+<h2>Auf Proplay</h2>
+<p><strong><em>Achtung</em></strong>, das Aussehen und die Funktionalität der mit den Screenshots dokumentierten Seite hat sich zwischenzeitlich stark verändert (siehe Screenshots weiter oben).</p>
+<p>Am 17./18.9.2014 wurde dort Git eingerichtet. Man findet daher auf den SSH Key in der Github-Einstellungsseite:</p>
+<p><img src="github.com-settings-ssh-SSH-Keys.jpg" alt="SSH Key in der Github-Einstellungsseite" /></p>
+<p>Das Hinzufügen eines SSH-Keys erfolgt auch dort mit</p>
+<p><img src="github.com-settings-ssh-add-SSH-Keys.jpg" alt="SSH Key hinzufügen" /></p>
+<p>Bei der Einrichtung wurde weitgehend diese Anleitung <a href="https://help.github.com/articles/set-up-git#platform-linux">https://help.github.com/articles/set-up-git#platform-linux</a> befolgt.</p>
+<h3>Setup</h3>
+<p>Mit</p>
+<pre><code>git config --global user.name &quot;YOUR NAME&quot;
+</code></pre>
+
+<p>und</p>
+<pre><code>git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
+</code></pre>
+
+<p>Das spiegelt sich auch in der Datei</p>
+<pre><code>/root/.gitconfig
+</code></pre>
+
+<p>wieder.</p>
+<h3>Authentifizierung</h3>
+<p>Wenn man unter SSH mit Git arbeiten will, muss ein SSH Key generiert werden. Dies wird hier <a href="https://help.github.com/articles/generating-ssh-keys#platform-linux">https://help.github.com/articles/generating-ssh-keys#platform-linux</a> beschrieben.</p>
+<p>Da ich mit</p>
+<pre><code>ls -al ~/.ssh
+</code></pre>
+
+<p>bereits einen Schlüssel vorgefunden habe, konnte ich mit Schritt 3 auf der genannten Seite fortfahren. Ich habe dort aber nicht <em>xclip</em> installiert, sondern die Datei auf den PC kopiert, diese mit Notepad++ geöffnet und den Key kopiert und in die Website eingefügt.</p>
+<h3>Test</h3>
+<p>Der Test mit</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p>ist dann auch, einschließlich der angegebenen Meldung</p>
+<blockquote>
+<p>The authenticity of host 'github.com (207.97.227.239)' can't be established.
+RSA key fingerprint is...
+Are you sure you want to continue connecting (yes/no)?</p>
+</blockquote>
+<p>erfolgreich.</p>
+<h3>Repository forken / clonen</h3>
+<p>Das Forken einer Repo wird <a href="https://help.github.com/articles/fork-a-repo">https://help.github.com/articles/fork-a-repo</a> beschrieben. Ich habe meine eigene Test-Repo verwendet. Diese konnte mit</p>
+<pre><code>git clone https://github.com/bpgs/test-for-pc
+</code></pre>
+
+<p>erfolgreich geforkt werden.</p>
+<p>Auch die Repo howto wurde geclont.</p>
+<h3>Repo befüllen von Proplay</h3>
+<p>siehe auch <a href="https://github.com/selste/openDrive/wiki/GitBasics">https://github.com/selste/openDrive/wiki/GitBasics</a></p>
+<p>Dazu neue Repo anlegen. Dabei schlägt git vor</p>
+<h3>Variante 1</h3>
+<blockquote>
+<p>Quick setup — if you've done this kind of thing before</p>
+</blockquote>
+<h3>Variante 2 Create a new repository on the command line</h3>
+<p>dazu</p>
+<pre><code>touch README.md
+git init
+git add README.md oder git add *
+git commit -m &quot;first commit&quot;
+git remote add origin git@github.com:bpgs/testrepo.git
+git push -u origin master
+</code></pre>
+
+<h3>Variante 3 Push an existing repository from the command line</h3>
+<pre><code>git remote add origin git@github.com:bpgs/testrepo.git
+git push -u origin master
+</code></pre>
+
+<h3>Die Schritte</h3>
+<p>Repo <strong>testrepo</strong> im Browser angelegt</p>
+<p>Auf Proplay Verzeichnis angelegt</p>
+<pre><code>mkdir testrepo
+</code></pre>
+
+<p>Ins Verzeichnis wechseln</p>
+<pre><code>cd testrepo
+</code></pre>
+
+<p>Datei anlegen</p>
+<pre><code>touch readme.md
+</code></pre>
+
+<p>Git benachrichtigen</p>
+<pre><code>git add *
+</code></pre>
+
+<p>oder</p>
+<pre><code>git add readme.md
+</code></pre>
+
+<p>Die vorgenommenen Änderungen ins Repository übernehmen </p>
+<pre><code>git commit -m &quot;first commit&quot;
+</code></pre>
+
+<p>Lokal zu Remote mit</p>
+<pre><code>git remote add origin git@github.com:bpgs/testrepo.git
+git push -u origin master
+</code></pre>
+
+<p>Allerdings wurde jetzt auch ein Unterverzeichnis angelegt.</p>
+<p>Jetzt wurde die Datei geändert. Trotzdem bringt</p>
+<pre><code>git push -u origin master
+</code></pre>
+
+<p>die meldung, dass alles aktuell sei. Daher</p>
+<pre><code>git commit -m &quot;Update&quot;
+</code></pre>
+
+<p>Bringt auch nichts. Also</p>
+<pre><code>git add readme.md
+git commit -m &quot;Update&quot;
+git push -u origin master
+</code></pre>
+
+<p>Update ist erfolgt.</p>
+<p>Neue Datei</p>
+<pre><code>touch liesmich.md
+git add liesmich.md
+git commit -m &quot;neue datei&quot;
+git push -u origin master
+</code></pre>
+
+<p>Alles ok. Der Kommentar <code>&quot;neue datei&quot;</code> wird nur für die neue Datei und das geänderte Unterverzeichnis übernommen.</p>
+<h2>Auf Windows 7 PC</h2>
+<p>Ich arbeite mit 2 unterschiedlichen Zugriffsvarianten</p>
+<ul>
+<li>Git version 1.9.5-preview</li>
+<li>Brackets</li>
+</ul>
+<h3>Git version 1.9.5-preview /neue Version Git-2.7.0-32-bit.exe bzw. Git-2.7.0-64-bit.exe</h3>
+<p>Dieses Programm sieht man in der Systemverwaltung mit</p>
+<p><img src="windows-programme-git.jpg" /></p>
+<p>Es erscheint dann in der Programmübersicht mit </p>
+<ul>
+<li>Git Bash</li>
+<li>Git CMD</li>
+<li>Git Gui</li>
+</ul>
+<p>Git Bash wird aufgerufen mit</p>
+<pre><code>&quot;C:\Program Files (x86)\Git\git-bash.exe&quot; --cd-to-home
+</code></pre>
+
+<p>Git CMD</p>
+<pre><code>&quot;C:\Program Files (x86)\Git\git-cmd.exe&quot; --cd-to-home
+</code></pre>
+
+<p>und Git Gui mit</p>
+<pre><code>&quot;C:\Program Files (x86)\Git\cmd\git-gui.exe&quot;
+</code></pre>
+
+<h4>Git Bash</h4>
+<p>Angenommen, alle Projekte befinden sich in <code>G:\Gitprojekte</code> dann kann man so vorgehen</p>
+<pre><code>cd /g
+cd Gitprojekte/
+mkdir ganzneu
+cd ganzneu/
+Git init
+</code></pre>
+
+<p>Damit wird dann im Verzeichnis <code>G:\Gitprojekte\ganzneu\.git</code> eine Repo angelegt. Wenn man jetzt</p>
+<pre><code>$ git clone https://github.com/bpgs/test-for-pc.git
+</code></pre>
+
+<p>oder auch nur</p>
+<pre><code>git clone https://github.com/bpgs/test-for-pc
+</code></pre>
+
+<p>ausführt, dann sieht man</p>
+<pre><code>Cloning into 'test-for-pc'...
+remote: Counting objects: 9, done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9
+Unpacking objects: 100% (9/9), done.
+Checking connectivity... done.
+</code></pre>
+
+<p>Ein nochmaliges Ausführen ergibt</p>
+<pre><code>fatal: destination path 'test-for-pc' already exists and is not an empty directory.
+</code></pre>
+
+<h4>Git Gui</h4>
+<p>Ausgangspunkt ist das leere Verzeichnis <code>I:\GitGuiTests</code></p>
+<p><img src="gitgui-01.JPG" alt="Start mit leerem Verzeichnis" /></p>
+<p>Git Gui wird gestartet und die Option <strong>Clone Existing Repository</strong> wird gewählt:</p>
+<p><img src="gitgui-02.JPG" alt="Clone Existing Repository" /></p>
+<p>Es soll mit der Repository <code>test-for-pc</code> gearbeitet werden. Die sieht auf GitHub so aus:</p>
+<p><img src="gitgui-03.JPG" alt="Repository test-for-pc" /></p>
+<p>Das Eingabefenster wird also gefüllt mit</p>
+<pre><code>https://github.com/bpgs/test-for-pc.git
+</code></pre>
+
+<p>und</p>
+<pre><code>I:/GitGuiTests/test-for-pc
+</code></pre>
+
+<p>gefüllt. Das Zielverzeichnis darf noch nicht existieren. Insgesamt sieht das dann so aus:</p>
+<p><img src="gitgui-04.JPG" alt="Auswahl zum Clonen" /></p>
+<p>Nach kurzer Zeit findet man das neue Unterverzeichnis <code>test-for-pc</code> mit den Dateien aus der entfernten Repository und einem weiteren Unterverzeichnis <code>.git</code></p>
+<p><img src="gitgui-05.JPG" alt="Neues Verzeichnis" /></p>
+<p>Außerdem erscheint gleich im Anschluss das GitGui Arbeitsfenster </p>
+<p><img src="gitgui-06.JPG" alt="Arbeitsfenster Verzeichnis" /></p>
+<h5>Datei ändern</h5>
+<p>Jetzt ändere ich die Datei xyz.md mit einem beliebigen Editor und füge eine Zeile mit</p>
+<pre><code>Noch ein Satz dazu.
+</code></pre>
+
+<p>ein und speichere sie. Dann drücke ich auf <strong>Rescan</strong>. Jetzt erscheinen die Änderungen</p>
+<p><img src="gitgui-07.JPG" alt="Arbeitsfenster Verzeichnis Rescan" /></p>
+<p>Dann klicke ich auf <strong>Stage Changed</strong></p>
+<p><img src="gitgui-08.JPG" alt="Arbeitsfenster Verzeichnis Stage Changed" /></p>
+<p>und trage einen Kommentar ein und drücke dann <strong>Commit</strong>. Jetzt sind alle Nachrichten und Veränderungen verschwunden. Ich drücke <strong>Push</strong> und es erscheint dieses Fenster:</p>
+<p><img src="gitgui-09.JPG" alt="Arbeitsfenster Push" /></p>
+<p>Ohne weitere Veränderungen wird jetzt gepusht. Nach der Abfrage des Benutzernamens und des Passworts erscheint ein Nachrichtenfenster:</p>
+<p><img src="gitgui-10.JPG" alt="Abhschluss Push" /></p>
+<p>Das Ergebnis kann man nun in der entfernten Repo begutachten:</p>
+<p><img src="gitgui-11.JPG" alt="Abschluss Push" /></p>
+<p>Man sieht das Änderungsdatum und den Kommentar zur letzten Änderung.</p>
+<h5>Datei hinzufügen</h5>
+<p>Jetzt habe ich die Datei xyz.md gelöscht und abc.md hinzugefügt. Wieder der gleiche Ablauf. Nach dem <strong>Rescan</strong> sieht man die beiden Änderungen:</p>
+<p><img src="gitgui-12.JPG" alt="2 Änderungen" /></p>
+<p>wobei zu jeder Änderung ein andere Kommentar erscheint. Jetzt wieder <strong>Stage Changed</strong>. es kommt noch eine zwischenfrage, ob die neue Datei aufgenommen werden soll, dann sieht man</p>
+<p><img src="gitgui-13.JPG" alt="Änderungen" /></p>
+<p>Danach noch abzeichen, committen und pushen. Jetzt sieht man die neue Datei in der entfernten Repo während die alte verschwunden ist:</p>
+<p><img src="gitgui-14.JPG" alt="Änderungen in der Repo" /></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
