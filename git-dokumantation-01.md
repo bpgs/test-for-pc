@@ -1,5 +1,9 @@
 # Arbeiten mit Git
 
+## Anmerkung: 
+
+Der Inhalt dieser Datei wurde nach README.md kopiert
+
 ## Vorbereitung
 
 Meine Github-Projekte sind erreichbar über [https://github.com/bpgs](https://github.com/bpgs "Meine Github-Startseite"). Sieht so aus:
