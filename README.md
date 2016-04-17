@@ -296,23 +296,23 @@ Jetzt ändere ich die Datei xyz.md mit einem beliebigen Editor und füge eine Ze
 
 ein und speichere sie. Dann drücke ich auf **Rescan**. Jetzt erscheinen die Änderungen
 
-![Arbeitsfenster Verzeichnis Rescan](gitgui-07.jpg)
+![Arbeitsfenster Verzeichnis Rescan](gitgui-07.JPG)
 
 Dann klicke ich auf **Stage Changed**
 
-![Arbeitsfenster Verzeichnis Stage Changed](gitgui-08.jpg)
+![Arbeitsfenster Verzeichnis Stage Changed](gitgui-08.JPG)
 
 und trage einen Kommentar ein und drücke dann **Commit**. Jetzt sind alle Nachrichten und Veränderungen verschwunden. Ich drücke **Push** und es erscheint dieses Fenster:
 
-![Arbeitsfenster Push](gitgui-09.jpg)
+![Arbeitsfenster Push](gitgui-09.JPG)
 
 Ohne weitere Veränderungen wird jetzt gepusht. Nach der Abfrage des Benutzernamens und des Passworts erscheint ein Nachrichtenfenster:
 
-![Abhschluss Push](gitgui-10.jpg)
+![Abhschluss Push](gitgui-10.JPG)
 
 Das Ergebnis kann man nun in der entfernten Repo begutachten:
 
-![Abschluss Push](gitgui-11.jpg)
+![Abschluss Push](gitgui-11.JPG)
 
 Man sieht das Änderungsdatum und den Kommentar zur letzten Änderung.
 
@@ -320,12 +320,12 @@ Man sieht das Änderungsdatum und den Kommentar zur letzten Änderung.
 
 Jetzt habe ich die Datei xyz.md gelöscht und abc.md hinzugefügt. Wieder der gleiche Ablauf. Nach dem **Rescan** sieht man die beiden Änderungen:
 
-![2 Änderungen](gitgui-12.jpg)
+![2 Änderungen](gitgui-12.JPG)
 
 wobei zu jeder Änderung ein andere Kommentar erscheint. Jetzt wieder **Stage Changed**. es kommt noch eine zwischenfrage, ob die neue Datei aufgenommen werden soll, dann sieht man
 
-![Änderungen](gitgui-13.jpg)
+![Änderungen](gitgui-13.JPG)
 
 Danach noch abzeichen, committen und pushen. Jetzt sieht man die neue Datei in der entfernten Repo während die alte verschwunden ist:
 
-![Änderungen in der Repo](gitgui-14.jpg)
+![Änderungen in der Repo](gitgui-14.JPG)
